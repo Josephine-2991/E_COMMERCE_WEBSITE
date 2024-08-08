@@ -1,0 +1,81 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 3px blue;
+
+
+}
+
+ .product_container{
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    
+} 
+
+.product_cardie{
+   box-shadow: 0px 0px 7px 0.5px rgb(175, 163, 163);
+    background-color: rgb(224, 222, 222);
+    width: 270px;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+.product_cardie:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0.5px rgb(175, 163, 163);
+    transform: scale(1.05, 1.05);
+
+
+}
+#product_cardie_image{
+    width: 150px;
+    border-radius: 5px;
+}
+.product_cardie_text{
+    display: flex;
+    font-size: 13.5px;
+    
+    
+}
+.one{
+    display: flex;
+    font-size: 13.5px;
+    margin: 0px 0px 0px;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+.button_now{
+    background-color: rgb(5, 82, 38);
+    color: white;
+    padding: 9px 15px;
+    font-size: 14px;
+    width:200px;
+    border-radius:10px;
+    border: none;
+    outline: none;
+    box-shadow: inset 0px 0px 0px 2px rgb(1, 102, 45) ;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.button_now:hover{
+    background-color: rgba(15, 105, 54, 0.637);
+    box-shadow: 0px 0px 0px 2px  rgba(7, 78, 38, 0.637); 
+
+
+}
+
